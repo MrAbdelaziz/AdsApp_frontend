@@ -1,4 +1,4 @@
-# ![Ads](https://gitlab.com/MrAbdelaziz/ads_frontend/-/raw/master/screens/ad%20details.png)
+# ![Ads](https://raw.githubusercontent.com/MrAbdelaziz/AdsApp_frontend/master/screens/ad%20details.png)
 # Ads FrontEnd
 <table>
 <tr>
@@ -12,24 +12,24 @@ Dans le projet, le but est de développer un site (style LeBonCoin) pour les pet
 
 ### Admin page
 
-![](https://gitlab.com/MrAbdelaziz/ads_frontend/-/raw/master/screens/admin%20page.png)
+![](https://raw.githubusercontent.com/MrAbdelaziz/AdsApp_frontend/master/screens/admin%20page.png)
 
 ### Admin | Ads Management 
-![](https://gitlab.com/MrAbdelaziz/ads_frontend/-/raw/master/screens/ads%20for%20admin.png)
+![](https://raw.githubusercontent.com/MrAbdelaziz/AdsApp_frontend/master/screens/ads%20for%20admin.png)
 
 ### User page
-![](https://gitlab.com/MrAbdelaziz/ads_frontend/-/raw/master/screens/home%20page.png)
+![](https://raw.githubusercontent.com/MrAbdelaziz/AdsApp_frontend/master/screens/home%20page.png)
 
 
 
 ### Manage Ad
-![](https://gitlab.com/MrAbdelaziz/ads_frontend/-/raw/master/screens/manage%20ads.png)
+![](https://raw.githubusercontent.com/MrAbdelaziz/AdsApp_frontend/master/screens/manage%20ads.png)
 
 ### Manage Thumbnails
-![](https://gitlab.com/MrAbdelaziz/ads_frontend/-/raw/master/screens/manage%20thumbnails%20for%20ads.png)
+![](https://raw.githubusercontent.com/MrAbdelaziz/AdsApp_frontend/master/screens/manage%20thumbnails%20for%20ads.png)
 
 ### Ad Details
-![](https://gitlab.com/MrAbdelaziz/ads_frontend/-/raw/master/screens/ad%20details.png)
+![](https://raw.githubusercontent.com/MrAbdelaziz/AdsApp_frontend/master/screens/ad%20details.png)
 
 ### Auth
 <table>
@@ -38,8 +38,8 @@ Dans le projet, le but est de développer un site (style LeBonCoin) pour les pet
      <td>Auth error</td>
   </tr>
   <tr>
-    <td><img src="https://gitlab.com/MrAbdelaziz/ads_frontend/-/raw/master/screens/auth.png" width=600 height=480></td>
-    <td><img src="https://gitlab.com/MrAbdelaziz/ads_frontend/-/raw/master/screens/auth%20error.png" width=600 height=480></td>
+    <td><img src="https://raw.githubusercontent.com/MrAbdelaziz/AdsApp_frontend/master/screens/auth.png" width=600 height=480></td>
+    <td><img src="https://raw.githubusercontent.com/MrAbdelaziz/AdsApp_frontend/master/screens/auth%20error.png" width=600 height=480></td>
   </tr>
  </table>
 
