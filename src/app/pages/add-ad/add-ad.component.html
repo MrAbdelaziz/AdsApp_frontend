@@ -1,0 +1,20 @@
+<div class="ui container text">
+  <app-header></app-header>
+  <div style="margin-top: 15px">
+    <div class="ui card fluid">
+      <div class="content">
+        <div class="header">Add Ad</div>
+        <div style="margin-top: 15px">
+          <app-add-ad-form (onAdd)="onAdd()"></app-add-ad-form>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui segment" style="padding: 0 !important" [class]="onLoading()">
+      <app-home-ad-table
+        (onDelete)="onDelete()"
+        [ads]="ads"
+      ></app-home-ad-table>
+    </div>
+  </div>
+</div>

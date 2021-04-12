@@ -1,0 +1,15 @@
+<div class="ui menu">
+  <div class="header item">Ads</div>
+  <a *ngIf="user.username" class="item" (click)="goHome()"> Home </a>
+
+  <a *ngIf="user.role == 'ROLE_ADMIN'" class="item" (click)="goAdmin()">
+    Admin
+  </a>
+  <div class="right menu">
+    <a *ngIf="user.username" class="item header">
+      {{ user.username }}
+    </a>
+    <a class="item" *ngIf="!user.username" (click)="goLogin()">Login</a>
+    <a class="item" *ngIf="user.username" (click)="goLogout()">Logout</a>
+  </div>
+</div>

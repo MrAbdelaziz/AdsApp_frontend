@@ -1,0 +1,28 @@
+<div class="ui container text">
+  <app-header></app-header>
+
+  <div style="padding: 15px; margin-top: -20px">
+    <button
+      class="ui right floated button orange"
+      (click)="goAdd()"
+      style="margin-top: 40px"
+    >
+      Add
+    </button>
+
+    <h2 class="ui dividing header">
+      Home
+      <div class="sub header">List of ads.</div>
+    </h2>
+
+    <div *ngIf="loading" class="ui active centered inline loader"></div>
+
+    <div class="ui internally celled grid">
+      <div class="row">
+        <div class="thirteen wide centered column">
+          <app-ad-card *ngFor="let ad of ads" [ad]="ad"></app-ad-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

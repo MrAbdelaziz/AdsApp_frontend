@@ -1,0 +1,24 @@
+<div class="ui container text">
+  <app-header></app-header>
+
+  <div style="margin-top: 15px">
+    <div class="ui two column centered grid">
+      <div class="column">
+        <div *ngIf="message" class="ui negative message">
+          <i class="close icon"></i>
+          <div class="header">Auth Error</div>
+          <p>{{ message }}</p>
+        </div>
+
+        <div class="ui card fluid">
+          <div class="content">
+            <div class="header">Login</div>
+            <div style="margin-top: 15px">
+              <app-login-form (onError)="onError()"></app-login-form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

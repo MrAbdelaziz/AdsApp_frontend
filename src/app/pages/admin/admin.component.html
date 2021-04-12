@@ -1,0 +1,17 @@
+<div class="ui container text">
+  <app-header></app-header>
+  <div class="ui internally celled grid">
+    <div class="row">
+      <div class="three wide column" style="margin-top: 7px">
+        <div class="ui secondary vertical small menu" style="width: 95%">
+          <div class="header item">Menu</div>
+          <a class="active item" (click)="goAdminHome()"> Home </a>
+          <a class="item" (click)="goAds()"> Ads </a>
+        </div>
+      </div>
+      <div class="thirteen wide column">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

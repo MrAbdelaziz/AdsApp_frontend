@@ -1,0 +1,54 @@
+<div class="ui container text">
+  <app-header></app-header>
+
+  <div style="padding: 15px">
+    <h2 class="ui header">
+      <img src="https://semantic-ui.com/images/icons/plugin.png" />
+      <div class="content">
+        Detail
+        <div class="sub header">{{ ad.name }}</div>
+      </div>
+    </h2>
+
+    <div class="ui card fluid">
+      <div class="content">
+        <div class="ui tiny horizontal statistics statistic">
+          <div class="value">22</div>
+          <div class="label">Euro</div>
+        </div>
+        <div class="header">{{ ad.name }}</div>
+        <div class="meta">
+          <span class="category">{{ ad.dateCreated | amTimeAgo }}</span>
+        </div>
+        <div class="left aligned description">
+          <h4 class="ui sub header">Small Desc</h4>
+          <p>{{ ad.s_des }}</p>
+        </div>
+
+        <div class="left aligned description" style="margin-top: 15px">
+          <h4 class="ui sub header">Big Desc</h4>
+          <p>{{ ad.b_des }}</p>
+        </div>
+      </div>
+      <div class="extra content">
+        <span class="left floated like">
+          <i class="file image icon"></i>
+          {{ ad.thumbnails.length }}
+        </span>
+        <div class="right floated author">
+          <img
+            class="ui avatar image"
+            src="https://semantic-ui.com/images/avatar/small/matt.jpg"
+          />
+          {{ ad.author.username }}
+        </div>
+      </div>
+    </div>
+
+    <carousel [autoplay]="true">
+      <div class="carousel-cell" *ngFor="let t of ad.thumbnails">
+        <img [src]="t.uri" />
+      </div>
+    </carousel>
+  </div>
+</div>

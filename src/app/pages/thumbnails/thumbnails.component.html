@@ -1,0 +1,24 @@
+<div class="content">
+  <h3 class="ui dividing header" style="padding-left: 9px">
+    Manage your Thumbnails
+  </h3>
+  <div style="padding-left: 9px">
+    <div class="ui card fluid">
+      <div class="content">
+        <div class="header">Add Thambnail</div>
+        <div style="margin-top: 15px">
+          <app-add-thumbnail-form
+            (onAddThumbnail)="onAddThumbnail()"
+          ></app-add-thumbnail-form>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui segment" style="padding: 0 !important">
+      <app-thumbnail-table
+        (onDelete)="onDelete()"
+        [thumbnails]="thumbnails"
+      ></app-thumbnail-table>
+    </div>
+  </div>
+</div>

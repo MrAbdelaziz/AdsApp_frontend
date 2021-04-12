@@ -1,0 +1,48 @@
+<form [class]="onLoading()" class="ui form" (ngSubmit)="onSubmit()">
+  <div class="field">
+    <div class="fields">
+      <div class="twelve wide field">
+        <label>Name</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          [(ngModel)]="ad.name"
+        />
+      </div>
+      <div class="four wide field">
+        <label>Price</label>
+        <input
+          type="number"
+          name="price"
+          placeholder="Price"
+          [(ngModel)]="ad.price"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Small Description</label>
+    <input
+      type="text"
+      name="s_des"
+      placeholder="Small Description"
+      [(ngModel)]="ad.s_des"
+    />
+  </div>
+
+  <div class="field">
+    <label>Big Description</label>
+    <textarea
+      name="b_des"
+      placeholder="Big Description"
+      [(ngModel)]="ad.b_des"
+      rows="2"
+    ></textarea>
+  </div>
+
+  <button class="ui button orange" [class]="onLoading()" type="submit">
+    Submit
+  </button>
+</form>

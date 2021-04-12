@@ -1,0 +1,9 @@
+.content {
+  padding: 15px 0px;
+}
+
+.ui.horizontal.statistics {
+  flex-direction: unset !important;
+  width: 65px;
+  float: right;
+}

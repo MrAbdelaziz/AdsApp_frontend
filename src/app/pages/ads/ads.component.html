@@ -1,0 +1,13 @@
+<div class="content">
+  <h3 class="ui dividing header" style="padding-left: 9px">
+    Manage your Ads ({{ ads.length }})
+  </h3>
+  <div style="padding-left: 9px">
+    <app-ads-table
+      (onDelete)="onDelete()"
+      (onUpdate)="onUpdate()"
+      [loading]="loading"
+      [ads]="ads"
+    ></app-ads-table>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<table class="ui unstackable striped celled table">
+  <thead>
+    <tr>
+      <th colspan="1">#</th>
+      <th>Name</th>
+      <th>Thumbnails</th>
+      <th>Status</th>
+      <th colspan="1">Created_at</th>
+      <th class="center aligned" colspan="1">actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ad of ads">
+      <td class="collapsing">
+        <b> {{ ad.id }} </b>
+      </td>
+      <td>{{ ad.name }}</td>
+      <td class="collapsing center aligned">
+        <b> {{ ad.thumbnails.length }} </b>
+      </td>
+      <td class="collapsing center aligned">
+        <a class="item">
+          <div *ngIf="ad.status" class="ui green horizontal label">Proved</div>
+          <div *ngIf="!ad.status" class="ui red horizontal label">En cours</div>
+        </a>
+      </td>
+      <td class="collapsing">
+        {{ ad.dateCreated | amTimeAgo }}
+      </td>
+      <td class="collapsing">
+        <div class="ui icon buttons">
+          <button class="ui button" (click)="deleteAd(ad.id)">
+            <i class="trash red center icon"></i>
+          </button>
+          <button class="ui button" (click)="goThumbnails(ad.id)">
+            <i class="file blue image right icon"></i>
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

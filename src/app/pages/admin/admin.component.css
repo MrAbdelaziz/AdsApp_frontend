@@ -1,0 +1,17 @@
+.ui.celled.grid>.column:not(.row),
+.ui.celled.grid>.row>.column {
+  padding: 0 !important;
+}
+
+.ui.grid>.column:not(.row),
+.ui.grid>.row>.column {
+  padding-left: 0 !important;
+}
+
+ .ui.text.container {
+  max-width: 850px !important;
+}
+
+.ui.text.container {
+  font-size: 1.04285714rem;
+} 

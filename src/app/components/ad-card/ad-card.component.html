@@ -1,0 +1,32 @@
+<div
+  class="ui link card fluid"
+  (click)="geAdDetails(ad.id)"
+  style="margin-bottom: 10px"
+>
+  <div class="content">
+    <div class="ui tiny horizontal statistics statistic green">
+      <div class="value">22</div>
+      <div class="label" style="color: green !important">Euro</div>
+    </div>
+    <div class="header">{{ ad.name }}</div>
+    <div class="meta">
+      <span class="category">{{ ad.dateCreated | amTimeAgo }}</span>
+    </div>
+    <div class="center aligned description">
+      <p>{{ ad.s_des }}</p>
+    </div>
+  </div>
+  <div class="extra content">
+    <span class="left floated like">
+      <i class="file image icon"></i>
+      {{ ad.thumbnails.length }}
+    </span>
+    <div class="right floated author">
+      <img
+        class="ui avatar image"
+        src="https://semantic-ui.com/images/avatar/small/matt.jpg"
+      />
+      {{ ad.author.username }}
+    </div>
+  </div>
+</div>

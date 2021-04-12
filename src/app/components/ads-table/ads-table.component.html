@@ -1,0 +1,61 @@
+<div class="ui segment" [class]="onLoading()" style="padding: 0 !important">
+  <table class="ui unstackable striped celled table">
+    <thead>
+      <tr>
+        <th colspan="1">#</th>
+        <th colspan="1">User</th>
+        <th>Name</th>
+        <th>Thumbnails</th>
+        <th>Status</th>
+        <th colspan="1">Created_at</th>
+        <th class="center aligned" colspan="1">actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ad of ads">
+        <td class="collapsing">
+          <b> {{ ad.id }} </b>
+        </td>
+        <td class="collapsing">
+          <h4 class="ui image header">
+            <img
+              src="https://semantic-ui.com/images/avatar2/small/lena.png"
+              class="ui mini rounded image"
+            />
+            <div class="content">
+              {{ ad.author.username }}
+              <div class="sub header">User</div>
+            </div>
+          </h4>
+        </td>
+        <td>{{ ad.name }}</td>
+        <td class="collapsing center aligned">
+          <b> {{ ad.thumbnails.length }} </b>
+        </td>
+        <td class="collapsing center aligned">
+          <a class="item">
+            <div *ngIf="ad.status" class="ui green horizontal label">
+              {{ ad.status }}
+            </div>
+            <div *ngIf="!ad.status" class="ui red horizontal label">
+              {{ ad.status }}
+            </div>
+          </a>
+        </td>
+        <td class="collapsing">
+          {{ ad.dateCreated | amTimeAgo }}
+        </td>
+        <td class="collapsing">
+          <div class="ui icon buttons">
+            <button class="ui button" (click)="edit(ad.id, ad.status)">
+              <i class="edit green left icon"></i>
+            </button>
+            <button class="ui button" (click)="deleteAd(ad.id)">
+              <i class="trash red center icon"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

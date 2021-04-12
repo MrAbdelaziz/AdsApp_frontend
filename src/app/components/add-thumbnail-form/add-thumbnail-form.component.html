@@ -1,0 +1,20 @@
+<form class="ui form" [class]="onLoading()" (ngSubmit)="onSubmit()">
+  <div class="field">
+    <label>Url</label>
+    <div class="fields">
+      <div class="fourteen wide field">
+        <input
+          type="text"
+          name="uri"
+          placeholder="Url...."
+          [(ngModel)]="thumbnail.uri"
+        />
+      </div>
+      <div class="one wide field">
+        <button class="ui button orange" [class]="onLoading()" type="submit">
+          Add
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
